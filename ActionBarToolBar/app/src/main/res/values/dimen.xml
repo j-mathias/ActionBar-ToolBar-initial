@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="badge_text_size">12sp</dimen>
+    <dimen name="article_img_size_height">300dp</dimen>
+
+    <dimen name="margin">13dp</dimen>
+
+    <dimen name="article_title_size">25sp</dimen>
+    <dimen name="article_old_price_size">18sp</dimen>
+    <dimen name="article_new_price_size">20sp</dimen>
+    <dimen name="article_stock_size">19sp</dimen>
+    <dimen name="reduction_width">50dp</dimen>
+    <dimen name="reduction_height">25dp</dimen>
+</resources>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ActionBar ToolBar Example</string>
+    <string name="menu_refresh">Rafraichir</string>
+    <string name="menu_help">A propos</string>
+    <string name="menu_profile">Mon profil</string>
+    <string name="help_text">Version 1.0</string>
+    <string name="menu_cart">Panier</string>
+
+    <string name="article_title">Maillot hardwood classic Kobe Bryant</string>
+    <string name="old_price"><strike>88 €</strike></string>
+    <string name="new_price">80 €</string>
+    <string name="stock">En stock</string>
+    <string name="reduction">-10%</string>
+    <string name="add_to_cart">Ajouter au panier</string>
+</resources>

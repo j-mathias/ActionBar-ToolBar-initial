@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/article_img_size_height"
+        android:src="@drawable/kobe_jersey"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/article_title"
+        android:textSize="@dimen/article_title_size"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/grey">
+
+        <TextView
+            android:layout_width="@dimen/reduction_width"
+            android:layout_height="@dimen/reduction_height"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:text="@string/reduction"
+            android:textSize="@dimen/article_new_price_size"
+            android:textAlignment="center"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/margin"
+            android:layout_gravity="start">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/old_price"
+                android:textSize="@dimen/article_old_price_size"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_price"
+                android:textSize="@dimen/article_new_price_size"
+                android:textStyle="bold"
+                android:paddingLeft="15dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stock"
+                android:textSize="@dimen/article_stock_size"
+                android:textColor="@color/green"
+                android:paddingLeft="20dp"/>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/cartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_to_cart"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
