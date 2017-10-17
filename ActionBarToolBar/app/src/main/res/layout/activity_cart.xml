@@ -5,10 +5,37 @@
     android:orientation="vertical">
 
 
-    <include
+    <!-- Etape X-1 et X-->
+    <!--
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/custom_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="?attr/colorPrimary"
+        >
+
+        <TextView
+            android:id="@+id/bottom_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_value"
+            android:drawableLeft="@drawable/ic_menu_cart"
+            android:textColor="@color/white"
+            android:textSize="@dimen/article_new_price_size"/>
+
+    </android.support.v7.widget.Toolbar>
+    -->
+
+    <!-- Etape X-->
+    <!--<include
         layout="@layout/custom_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+        -->
 
 
         <TableLayout

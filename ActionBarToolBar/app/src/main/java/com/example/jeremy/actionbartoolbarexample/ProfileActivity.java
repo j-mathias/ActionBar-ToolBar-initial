@@ -22,19 +22,23 @@ public class ProfileActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        //Etape X-5
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
 
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        //Etape X-4 et X-5
+        //getSupportActionBar().setDisplayShowTitleEnabled(true);
 
         cartCounter=getIntent().getIntExtra("articlesInCart",0);
 
-        TextView bottomCounter = (TextView) findViewById(R.id.bottom_counter);
-        bottomCounter.setText(cartCounter + " articles dans le panier.");
+        //Etape X+1
+        //TextView bottomCounter = (TextView) findViewById(R.id.bottom_counter);
+        //bottomCounter.setText(cartCounter + " articles dans le panier.");
 
     }
 
-
+    //Etape X-2
+/*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.app_menu, menu);
@@ -66,5 +70,6 @@ public class ProfileActivity extends AppCompatActivity{
         }
         return super.onOptionsItemSelected(item);
     }
+    */
 
 }

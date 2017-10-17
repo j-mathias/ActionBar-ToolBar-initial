@@ -34,21 +34,25 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-
+    //Etape 3
+/*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.app_menu, menu);
 
-        if (cartCounter != 0) {
-            MenuItem itemCart = menu.findItem(R.id.menu_cart);
-            LayerDrawable icon = (LayerDrawable) itemCart.getIcon();
-            setBadgeCount(this, icon, String.valueOf(cartCounter));
-        }
+        //Etape X-6
+
+        //if (cartCounter != 0) {
+        //   MenuItem itemCart = menu.findItem(R.id.menu_cart);
+        //   LayerDrawable icon = (LayerDrawable) itemCart.getIcon();
+        //   setBadgeCount(this, icon, String.valueOf(cartCounter));
+        //}
 
         return true;
     }
-
-
+*/
+    //Etape 5
+    /*
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menu_cart:
@@ -69,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+    */
 
     public static void setBadgeCount(Context context, LayerDrawable icon, String count) {
 

@@ -11,8 +11,6 @@
     android:layout_alignParentBottom="true"
     >
 
-
-
     <TextView
         android:id="@+id/bottom_counter"
         android:layout_width="wrap_content"
@@ -21,6 +19,5 @@
         android:drawableLeft="@drawable/ic_menu_cart"
         android:textColor="@color/white"
         android:textSize="@dimen/article_new_price_size"/>
-
 
 </android.support.v7.widget.Toolbar>

@@ -19,16 +19,11 @@ public class CartActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cart);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.custom_toolbar);
-
-        setSupportActionBar(toolbar);
-
-        getSupportActionBar().setDisplayShowTitleEnabled(false);
-
         cartCounter=getIntent().getIntExtra("articlesInCart",0);
 
-        TextView bottomCounter = (TextView) findViewById(R.id.bottom_counter);
-        bottomCounter.setText(cartCounter + " articles dans le panier.");
+        //Etape X-1
+        //TextView counter = (TextView) findViewById(R.id.bottom_counter);
+        //counter.setText(cartCounter + " articles dans le panier.");
 
         TextView article_qty = (TextView) findViewById(R.id.article_qty);
         article_qty.setText(String.valueOf(cartCounter));
