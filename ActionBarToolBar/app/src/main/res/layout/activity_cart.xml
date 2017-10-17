@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include
+        layout="@layout/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/table_padding"
+                android:background="@color/white"
+                android:layout_margin="@dimen/margin">
+                <TextView
+                    android:text="@string/nom_article"/>
+
+                <TextView
+                    android:text="@string/quantity"
+                    android:layout_marginLeft="@dimen/table_margin"/>
+
+                <TextView
+                    android:text="@string/prix_unitaire"
+                    android:layout_marginLeft="@dimen/table_margin"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/table_padding"
+                android:layout_margin="@dimen/margin">
+                <TextView
+                    android:text="@string/article_name_short"/>
+
+                <TextView
+                    android:id="@+id/article_qty"
+                    android:text="@string/default_value"
+                    android:layout_marginLeft="@dimen/table_margin"/>
+
+                <TextView
+                    android:text="@string/new_price"
+                    android:layout_marginLeft="@dimen/table_margin"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/table_padding"
+                android:background="@color/green"
+                android:layout_margin="@dimen/margin"
+                >
+                <TextView
+                    android:layout_column="1"
+                    android:text="@string/total"
+                    android:layout_marginLeft="@dimen/table_margin"/>
+                <TextView
+                    android:id="@+id/final_price"
+                    android:layout_column="2"
+                    android:text="@string/new_price"
+                    android:layout_marginLeft="@dimen/table_margin"/>
+            </TableRow>
+
+
+        </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/button_top_margin">
+
+        <Button
+            android:id="@+id/backToShoppingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/keep_shopping"/>
+
+        <Button
+            android:id="@+id/paymentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pay"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

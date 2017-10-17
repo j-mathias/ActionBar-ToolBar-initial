@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="table_padding">5dip</dimen>
+    <dimen name="table_margin">15dp</dimen>
+    <dimen name="button_top_margin">20dp</dimen>
+</resources>

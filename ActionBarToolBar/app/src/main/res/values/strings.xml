@@ -12,4 +12,21 @@
     <string name="stock">En stock</string>
     <string name="reduction">-10%</string>
     <string name="add_to_cart">Ajouter au panier</string>
+
+    <string name="payment_message">Virement à Jeremy MATHIAS effectué.</string>
+    <string name="default_value">0</string>
+    <string name="nom_article">Nom de l\'article</string>
+    <string name="quantity">Quantité</string>
+    <string name="prix_unitaire">Prix unitaire</string>
+    <string name="article_name_short">Maillot K. Bryant</string>
+    <string name="total">Total</string>
+    <string name="keep_shopping">Continuer vos achats</string>
+    <string name="pay">Payer</string>
+    <string name="toolbar_title_profile">Mon profil</string>
+    <string name="firstname">Jean</string>
+    <string name="lastname">Mur</string>
+    <string name="mail">jean.mur@gmail.com</string>
+    <string name="recap_title">Dans les 30 derniers jours :</string>
+    <string name="recap_nb_cmd">2 commandes effectuées</string>
+    <string name="recap_price_cmd">65€98 dépensés</string>
 </resources>

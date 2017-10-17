@@ -45,8 +45,6 @@ public class BadgeDrawable extends Drawable {
     @Override
     public void draw(Canvas canvas) {
 
-
-
         if (!mWillDraw) {
             return;
         }
@@ -54,9 +52,6 @@ public class BadgeDrawable extends Drawable {
         float width = bounds.right - bounds.left;
         float height = bounds.bottom - bounds.top;
 
-        // Position the badge in the top-right quadrant of the icon.
-
-	        /*Using Math.max rather than Math.min */
 
         float radius = ((Math.max(width, height) / 2)) / 2;
         float centerX = (width - radius - 1) +5;
@@ -69,9 +64,7 @@ public class BadgeDrawable extends Drawable {
         else{
             canvas.drawCircle(centerX, centerY, (int)(radius+8.5), mBadgePaint1);
             canvas.drawCircle(centerX, centerY, (int)(radius+6.5), mBadgePaint);
-//	        	canvas.drawRoundRect(radius, radius, radius, radius, 10, 10, mBadgePaint);
         }
-        // Draw badge count text inside the circle.
         mTextPaint.getTextBounds(mCount, 0, mCount.length(), mTxtRect);
         float textHeight = mTxtRect.bottom - mTxtRect.top;
         float textY = centerY + (textHeight / 2f);
@@ -81,13 +74,10 @@ public class BadgeDrawable extends Drawable {
             canvas.drawText(mCount, centerX, textY, mTextPaint);
     }
 
-    /*
-    Sets the count (i.e notifications) to display.
-     */
+
     public void setCount(String count) {
         mCount = count;
 
-        // Only draw a badge if there are notifications.
         mWillDraw = !count.equalsIgnoreCase("0");
         invalidateSelf();
     }

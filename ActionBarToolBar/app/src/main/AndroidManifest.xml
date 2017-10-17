@@ -19,6 +19,9 @@
         <activity android:name=".ProfileActivity"
             android:theme="@style/ToolBarTheme">
         </activity>
+        <activity android:name=".CartActivity"
+            android:theme="@style/ToolBarTheme">
+        </activity>
 
     </application>
 

@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    //Etape 3
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -49,11 +48,13 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    //Etape 4
 
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menu_cart:
+                Intent cartActivity = new Intent(MainActivity.this, CartActivity.class);
+                cartActivity.putExtra("articlesInCart", cartCounter);
+                startActivity(cartActivity);
                 return true;
             case R.id.menu_refresh:
 
@@ -63,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             case R.id.menu_profile:
                 Intent profileActivityIntent = new Intent(MainActivity.this, ProfileActivity.class);
+                profileActivityIntent.putExtra("articlesInCart", cartCounter);
                 startActivity(profileActivityIntent);
         }
         return super.onOptionsItemSelected(item);
@@ -72,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
 
         BadgeDrawable badge;
 
-        // Reuse drawable if possible
         Drawable reuse = icon.findDrawableByLayerId(R.id.ic_badge);
         if (reuse != null && reuse instanceof BadgeDrawable) {
             badge = (BadgeDrawable) reuse;
