@@ -5,7 +5,7 @@
     android:orientation="vertical">
 
 
-    <!-- Etape X-1 et X-->
+    <!-- Etape 11 et 12-->
     <!--
     <android.support.v7.widget.Toolbar
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -30,7 +30,7 @@
     </android.support.v7.widget.Toolbar>
     -->
 
-    <!-- Etape X-->
+    <!-- Etape 12-->
     <!--<include
         layout="@layout/custom_toolbar"
         android:layout_width="match_parent"

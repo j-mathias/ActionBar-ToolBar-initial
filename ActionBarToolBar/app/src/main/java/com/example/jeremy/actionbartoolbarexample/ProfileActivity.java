@@ -22,22 +22,22 @@ public class ProfileActivity extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        //Etape X-5
+        //Etape 7
         //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         //setSupportActionBar(toolbar);
 
-        //Etape X-4 et X-5
+        //Etape 8 et 7
         //getSupportActionBar().setDisplayShowTitleEnabled(true);
 
         cartCounter=getIntent().getIntExtra("articlesInCart",0);
 
-        //Etape X+1
+        //Etape 13
         //TextView bottomCounter = (TextView) findViewById(R.id.bottom_counter);
         //bottomCounter.setText(cartCounter + " articles dans le panier.");
 
     }
 
-    //Etape X-2
+    //Etape 10
 /*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

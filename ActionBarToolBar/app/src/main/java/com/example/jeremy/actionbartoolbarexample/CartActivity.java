@@ -21,7 +21,7 @@ public class CartActivity extends AppCompatActivity{
 
         cartCounter=getIntent().getIntExtra("articlesInCart",0);
 
-        //Etape X-1
+        //Etape 11
         //TextView counter = (TextView) findViewById(R.id.bottom_counter);
         //counter.setText(cartCounter + " articles dans le panier.");
 

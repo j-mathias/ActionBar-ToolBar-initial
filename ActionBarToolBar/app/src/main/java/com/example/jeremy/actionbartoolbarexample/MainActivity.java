@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.app_menu, menu);
 
-        //Etape X-6
+        //Etape 6
 
         //if (cartCounter != 0) {
         //   MenuItem itemCart = menu.findItem(R.id.menu_cart);
